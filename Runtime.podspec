@@ -9,7 +9,10 @@ Pod::Spec.new do |s|
     s.homepage     = "https://github.com/wickwirew/Runtime"
     s.license      = "MIT"
     s.author       = { "Wesley Wickwire" => "wickwirew@gmail.com" }
-    s.platform     = :ios, "9.0"
+    s.ios.deployment_target = '9.0'
+    s.osx.deployment_target = '9.12'
+    s.tvos.deployment_target = '9.0'
+    s.watchos.deployment_target = '3.0'
     s.source       = { :git => "https://github.com/wickwirew/Runtime.git", :tag => s.version }
     s.source_files = 'Sources/**/*.{swift,h}'
 end
